@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Crisis Awareness and Recycling</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Addressing the Growing E-Waste Crisis</h1>
+        <p>Upload your electronic device to see its recycling value and help reduce e-waste.</p>
+    </header>
+
+    <section id="intro">
+        <h2>What is E-Waste?</h2>
+        <p>As technology advances rapidly, electronic waste (e-waste) is increasing. Devices like smartphones, computers, and even old appliances contain harmful chemicals that contribute to environmental damage. By responsibly recycling your devices, you help reduce this crisis.</p>
+    </section>
+
+    <section id="upload-form">
+        <h2>Upload a Photo of Your Device</h2>
+        <form id="upload-form">
+            <label for="device-photo">Choose an image:</label>
+            <input type="file" id="device-photo" name="device-photo" accept="image/*" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="price-estimate">
+        <h2>Estimated Recycling Value</h2>
+        <p>Based on the device uploaded, we will calculate an estimated price or recycling value.</p>
+        <div id="price-output"></div>
+    </section>
+
+    <section id="ewaste-calculator">
+        <h2>E-Waste Calculator</h2>
+        <p>Use the calculator to estimate the environmental impact of your device:</p>
+        <label for="device-type">Select Device Type:</label>
+        <select id="device-type">
+            <option value="smartphone">Smartphone</option>
+            <option value="laptop">Laptop</option>
+            <option value="tablet">Tablet</option>
+            <option value="desktop">Desktop</option>
+        </select>
+
+        <button onclick="calculateImpact()">Calculate Environmental Impact</button>
+        <div id="ewaste-output"></div>
+    </section>
+
+    <footer>
+        <p>Contact us for more information or to submit your innovative e-waste solutions!</p>
+        <p>Email: info@ewastecrisis.org</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
